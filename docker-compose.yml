@@ -1,0 +1,19 @@
+version: '3'
+services:
+    planet-api:
+        build:
+            context: ./backend
+            dockerfile: ./docker-backend.dockerfile
+        volumes:
+            - ./backend:/app
+        restart: always
+        ports:
+            -   "3008:3002"
+        deploy:
+            mode: replicated
+            replicas: 1
+        environment:
+            EMAILFROM: ""
+            EMAILTO: ""
+            APPPASS: ""
+
