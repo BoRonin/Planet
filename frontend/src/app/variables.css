@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,400;1,500;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Mono:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,500;0,700;1,500;1,700&display=swap");
+
+:root {
+    --btn-color: #F0AE28;
+    --text-block-color: #2B4C6D;
+    --text-header-alt: #111A69;
+    --text-section-titles: #4C1A57;
+    --text-pages: #111A69;
+    
+    --white: #FFFFFF;
+    --yellow: #F0AE28;
+    --blue: #5AC7FF;
+    --purple: #7C2B8E;
+
+    --font-usual-nunito: "Nunito", sans-serif;
+    --font-noto: "Noto Serif Display", sans-serif;
+    --font-fira-mono: "Fira Mono", monospace;
+}

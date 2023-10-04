@@ -1,0 +1,65 @@
+.container {
+    width: 100%;
+    /* height: initial; */
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    /* background: no-repeat center/cover url("../../../img/\(main\ page\)\ pic\ 7\ Reviews.png"); */
+    translate: 0 -30px;
+    position: relative;
+}
+
+.title {
+    font-family: var(--font-usual-nunito);
+    color: var(--white);
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 42.69px;
+    letter-spacing: 3%;
+}
+
+.carousel {
+    height: 400px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.rev_rings {
+    height: 1430px;
+    width: 1748px;
+    position: absolute;
+    bottom: 200px;
+    /* bottom: -180px; */
+}
+
+/*-----Mobile-----*/
+
+@media (max-width: 1200px) {
+    .container {
+        margin-top: 60px;
+    }
+
+    .title {
+        font-size: 28px;
+        font-weight: 800;
+        line-height: 23px;
+        letter-spacing: 0.03em;
+    }
+
+    .carousel {
+        height: 320px;
+        position: relative;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .title {
+        font-size: 17px;
+        font-weight: 700;
+    }
+}

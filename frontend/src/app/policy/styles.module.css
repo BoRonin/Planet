@@ -1,0 +1,232 @@
+.main {
+    width: 100%;
+    height: 2099px;
+    display: flex;
+    justify-content: center;
+    background: no-repeat url("../../img/backgrounds-for-pages/Gallery_bg_without_pics.png");
+    background-size: cover;
+}
+
+.header {
+    height: 250px;
+}
+
+.sections_container {
+    height: 100%;
+    width: 1434px;
+    /* 1300px; /* 1441px; */
+    background: no-repeat url('../../img/backgrounds-for-pages/Gallery_bg_pics.png');
+    background-size: auto;
+    background-position-x: center;
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sections {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+.section_block ul {
+    display: flex;
+    flex-direction: column;
+}
+.section_block h1, .section_block h2 {
+    margin-bottom: 7px;
+}
+
+.section_block {
+    margin-bottom: 30px;
+}
+
+.section_block.block_1, .section_block.block_2, .section_block.block_5, .section_block.block_6 {
+    align-items: flex-end;
+    text-align: end;
+}
+
+.section_block.block_5, .section_block.block_6 {
+    width: 60%;
+    align-self: flex-end;
+}
+
+/* .section_block.block_5 li, .section_block.block_6 li {
+    align-self: flex-end;
+} */
+
+.footer {
+    margin-top: auto;
+}
+
+
+/*-----Mobile-----*/
+
+@media (max-width: 1317px) {
+
+    .block_1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    .block_1 h1 {
+        width: 70%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .sections_container {
+        margin-top: 60px;
+    }
+}
+@media (max-width: 1100px) {
+    .header {
+        height: 200px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .block_2 h2, .block_2 p {
+        text-align: center;
+    }
+    
+    .block_2, .block_3, .block_4 {
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media (max-width: 900px) {
+    .sections {
+        width: 80vw;
+    }
+
+    /* .block_2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    } */
+
+    /* .block_2 h2, .block_2 p {
+        text-align: center;
+    }
+    
+    .block_2, .block_3, .block_4 {
+        align-items: center;
+        text-align: center;
+    } */
+
+    .section_block.block_5, .section_block.block_6 {
+        width: 67%;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .main {
+        height: fit-content;
+    }
+    .header {
+        height: 150px;
+    }
+
+    .sections_container {
+        margin-top: 40px;
+        /* background: none; */
+        background-size: auto 100%;
+    }
+
+    /* .footer {
+        height: 1000px;
+    } */
+
+    .footer [class~="footer_box_of_blocks"] {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 750px) {
+    .header {
+        height: 80px;
+    }
+    /* .block_1 {
+        display: flex;
+        flex-direction: column;
+    } */
+    .block_1 h1 {
+        width: 80%;
+        align-self: flex-end;
+        text-align: end;
+    }
+}
+
+@media (max-width: 627px) {
+    .header {
+        height: 150px;
+    }
+
+    .block_1 h1 {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .block_1 p {
+        text-align: center;
+    }
+
+    .section_block.block_5, .section_block.block_6 {
+        width: 75%;
+    }
+
+}
+
+@media (max-width: 585px) {
+    .section_block.block_6 {
+        width: 100%;
+    }
+
+    .section_block.block_6 * {
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 530px) {
+    .section_block.block_5 {
+        width: 85%;
+    }
+    .section_block.block_5 * {
+        text-align: center;
+    }
+
+}
+@media (max-width: 430px) {
+    .section_block h1 {
+        font-size: 17px;
+        font-weight: 800;
+        line-height: 20px;
+    }
+    .section_block p {
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 16px;
+    }
+}
+
+@media (max-width: 430px) {
+    .section_block.block_5 {
+        width: 100%;
+    }
+
+    .section_block.block_5 * {
+        text-align: center;
+    }
+}
+
+@media (max-width: 405px) {
+    /* .section_block.block_6 p {
+        background-image: linear-gradient(180deg, rgba(240, 240, 228, 0), rgba(226, 129, 38, 0.877));
+        border-radius: 12px;
+    } */
+}

@@ -1,0 +1,21 @@
+@media (max-width: 1200px) {
+    .sect_footer {
+        width: 100%;
+        height: 992px;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        z-index: 0;
+      }
+            
+      .mobile_footer_bg {
+        position: absolute;
+        width: auto;
+        height: 100%;
+        /* height: 992px; 845px; 1194px x 882.2px */ 
+        /* object-fit: auto; */
+        z-index: 0;
+      }
+}

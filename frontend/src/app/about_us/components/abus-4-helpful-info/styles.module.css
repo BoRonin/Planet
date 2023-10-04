@@ -1,0 +1,241 @@
+.abus_4_container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: visible;
+}
+
+.section {
+    /* width: 1440px; */
+    height: 900px;
+    width: 1150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: visible;
+}
+
+.abus_title_box {
+    /* width: 100%; */
+    width: 681px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    line-height: 43px;
+    letter-spacing: 0.01em;
+    margin-top: 35px;
+    z-index: 1;
+}
+
+.abus_title_box_span_text {
+    color: var(--white);
+    text-align: center;
+}
+
+.abus_title_box_span_text span {
+    font-size: 32px;
+    line-height: 40px;
+    color: var(--yellow);
+}
+
+.info_bubbles_cont {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.bubble {
+    position: absolute;
+}
+
+/*---bubbles position---*/
+.bubble[class~="bubble_0"] {
+    left: 0;
+    top: 60px;
+}
+
+.bubble[class~="bubble_1"] {
+    left: 265px;
+    bottom: 240px;
+}
+
+.bubble[class~="bubble_2"] {
+    left: 480px;
+    top: 75px;
+}
+
+.bubble[class~="bubble_3"] {
+    right: 440px;
+    bottom: 140px;
+}
+
+.bubble[class~="bubble_4"] {
+    right: 30px;
+    bottom: 270px;
+}
+
+.bubble[class~="bubble_5"] {
+    right: 0;
+}
+
+/*---bubbles' text positioning---*/
+.bubble[class~="bubble_0"] div {
+    padding: 6px 14px 0 15px;
+    /* padding-bottom: 21px; */
+}
+
+.bubble[class~="bubble_1"] div {
+    padding: 4px 10px 10px 10px;
+}
+
+.bubble[class~="bubble_2"] div {
+    padding: 35px 6px 15px 6px;
+}
+
+.bubble[class~="bubble_3"] div {
+    padding: 11px 11px 10px 12px;
+}
+
+.bubble[class~="bubble_4"] div {
+    padding: 4px 10px 2px 10px;
+}
+
+.bubble[class~="bubble_5"] div {
+    padding: 4px 5px 5px 5px;
+}
+
+
+
+/*-----Mobile-----*/
+
+@media (max-width: 1200px) {
+
+    .abus_4_container {
+        background: center no-repeat url("../../../../img/Mobile_version/about_us/mobile_abus_help_info_bg.png");
+        background-size: 100% 100%;
+    }
+
+    .section {
+        width: 100%;
+        height: 560px;
+        justify-content: center;
+        padding-bottom: 45px;
+    }
+
+    .mobile_2nd_body_pic {
+        position: absolute;
+        object-fit: contain;
+        top: 117px;
+    }
+
+    .abus_title_box {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .info_bubbles_cont {
+        height: 250px;
+    }
+
+    .abus_title_box_span_text {
+        /* width: 85%; */
+        width: 650px;
+        max-width: 750px;
+        font-size: 28px;
+        line-height: 30px;
+        /* max-width: 400px; */
+        /* height: 60px; */
+    }
+
+    /* .abus_title_box_span_text span {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 15px;
+        letter-spacing: 0.03em;
+    } */
+
+    .info_bubbles_cont [class~="swiper"] {
+        height: 100%;
+    }
+
+    .info_bubbles_cont [class~="swiper-slide"] {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .text_bubble {
+        background-color: var(--white);
+        height: 235px;
+        width: 235px;
+        border-radius: 50%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16px;
+        letter-spacing: 0em;
+        padding: 30px 20px 20px;
+    }
+
+
+    .info_bubbles_cont [class~="swiper"] [class~="swiper-button-prev"]::after,
+    .info_bubbles_cont [class~="swiper"] [class~="swiper-button-next"]::after {
+        font-size: 15px;
+        color: var(--white);
+    }
+
+    .info_bubbles_cont [class~="swiper"] [class~="swiper-button-prev"] {
+        right: calc(50% + 150px);
+        left: auto;
+    }
+
+    .info_bubbles_cont [class~="swiper"] [class~="swiper-button-next"] {
+        left: calc(50% + 150px);
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .section {
+        padding-bottom: 40px;
+    }
+
+    .info_bubbles_cont {
+        height: 290px;
+    }
+
+    .abus_title_box_span_text {
+        width: 86%;
+        max-width: 400px;
+        height: 60px;
+        font-size: 17px;
+        font-weight: 700;
+        line-height: 20px;
+        letter-spacing: 0.03em;
+    }
+
+    .abus_title_box_span_text span {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 15px;
+        letter-spacing: 0.03em;
+    }
+}
+
+@media (max-width: 600px) {
+    .abus_4_container {
+        background-size: cover;
+    }
+}
+
+/* @media (max-width: 460px) {
+    .abus_title_box_span_text {
+        width: 87%;
+    }
+} */

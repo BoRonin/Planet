@@ -1,0 +1,212 @@
+.abus_6_container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.section {
+    /* width: 1440px; */
+    /* height: 600px;
+    width: 1150px; */
+    display: flex;
+    flex-direction: column;
+    width: 580px;
+    height: 450px;
+    margin-right: 100px;
+}
+
+.abus_title_box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    line-height: 37px;
+    letter-spacing: 0.01em;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.extraserv_text_box [class~="abus_title"] {
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 27px;
+    letter-spacing: 0em;
+}
+
+.extraserv_text_box [class~="abus_text"] {
+    color: var(--text-section-titles);
+    width: 70%;
+}
+
+.extraserv_text_box_block {
+    margin: 25px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.service_name_right,
+.service_text_right {
+    text-align: end;
+    align-self: flex-end;
+}
+
+.aqua_icon_box {
+    right: 690px;
+    top: 80px;
+}
+
+.beauty_icon_box {
+    right: 50px;
+    top: 186px;
+}
+
+.candy_icon_box {
+    right: 690px;
+    top: 263px;
+}
+
+.photo_icon_box {
+    right: 50px;
+    top: 345px;
+}
+
+.icon_box_extra_serv svg {
+    width: 43px;
+    height: 43px;
+}
+
+
+/*-----Mobile-----*/
+
+@media (max-width: 1200px) {
+    .abus_6_container {
+        height: fit-content;
+    }
+
+    .section {
+        width: 100%;
+        height: 400px;
+        margin: 0 0 50px;
+    }
+
+
+    .abus_title_box {
+        display: flex;
+        justify-content: center;
+    }
+
+    .extraserv_text_box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .extraserv_text_box_block {
+        width: 70%;
+        max-width: 600px;
+    }
+
+    /* .extraserv_text_box_block [class~="abus_title"] {
+        font-size: 13px;
+        font-weight: 800;
+        letter-spacing: 0em;
+    }
+
+    .extraserv_text_box_block [class~="abus_text"] {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 16px;
+        letter-spacing: 0em;
+    } */
+
+    .extraserv_text_box .extraserv_text_box_block {
+        height: 31px;
+    }
+
+    /*---icons---*/
+
+    .icon_box_extra_serv {
+        display: flex;
+        width: fit-content;
+    }
+
+    .icon_box_extra_serv svg {
+        width: 21px;
+        height: 21px;
+    }
+
+    .aqua_icon_box,
+    .candy_icon_box {
+        right: calc(50% + 305px);
+    }
+    .beauty_icon_box,
+    .photo_icon_box {
+        left: calc(50% + 305px);
+    }
+
+    .aqua_icon_box {
+        top: 93px;
+    }
+    .beauty_icon_box {
+        top: 173px;
+    }
+    .candy_icon_box {
+        top: 252px;
+    }
+    .photo_icon_box {
+        top: 336px;
+    }
+
+}
+
+@media (max-width: 870px) {
+
+    .aqua_icon_box {
+        top: 94px;
+        left: calc(15% - 25px);
+        right: initial;
+    }
+
+    .beauty_icon_box {
+        top: 175px;
+        right: calc(15% - 25px);
+        left: initial;
+    }
+
+    .candy_icon_box {
+        top: 254px;
+        left: calc(15% - 25px);
+        right: initial;
+    }
+
+    .photo_icon_box {
+        top: 336px;
+        right: calc(15% - 25px);
+        left: initial;
+    }
+}
+
+@media (max-width: 768px) {
+    .abus_title_box {
+        font-size: 17px;
+        font-weight: 800;
+        letter-spacing: 0.03em;
+    }
+
+    .extraserv_text_box_block [class~="abus_title"] {
+        font-size: 13px;
+        font-weight: 800;
+        letter-spacing: 0em;
+    }
+
+    .extraserv_text_box_block [class~="abus_text"] {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 16px;
+        letter-spacing: 0em;
+    }
+}

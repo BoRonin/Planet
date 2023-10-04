@@ -1,0 +1,29 @@
+
+
+
+
+.blackened_bg {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 40;
+    background-color: rgba(17, 17, 17, 0.466);
+    /* opacity: 50%; */
+}
+
+
+.modal_container {
+    position: fixed;
+    top: 0;
+
+    /* height: 100vh; */
+    max-width: fit-content;
+    overflow: hidden;
+    z-index: 50;
+    /* width: 100vw; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

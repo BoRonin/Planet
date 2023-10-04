@@ -1,0 +1,47 @@
+.abus_7_container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 80px;
+
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    width: 1150px;
+    height: 480px;
+    margin: 100px 0 0 0;
+}
+
+/* .abus_title_box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    line-height: 37px;
+    letter-spacing: 0.01em;
+    font-size: 30px;
+    margin-bottom: 30px;
+} */
+
+@media (max-width: 1400px) {
+    .section {
+        padding-left: 6%;
+    }
+
+}
+
+@media (max-width: 1200px) {
+    .abus_7_container {
+        margin: 0;
+    }
+
+    .section {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+}

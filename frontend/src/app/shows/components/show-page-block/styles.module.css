@@ -1,0 +1,273 @@
+.show_page_section {
+    display: flex;
+    flex-direction: column;
+    /* height: 550px; */
+    width: 1212px;
+}
+
+.title {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 33px;
+    letter-spacing: 0.03em;
+    margin: 35px 0;
+}
+
+.text_grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid_cell {
+    display: flex;
+    margin: 25px;
+    /* align-items: center; */
+}
+
+.grid_cell_icon {
+    margin-right: 20px;
+    width: 63px;
+}
+
+.grid_cell_icon svg {
+    width: 63px;
+    height: 63px;
+}
+
+.cell_head {
+    font-size: 25px;
+    font-weight: 800;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    margin-bottom: 15px;
+}
+
+.cell_text {
+    color: var(--text-block-color);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.cell_text [class~="hotdog_arrow"] {
+    display: flex;
+}
+
+
+.grid_cell_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.grid_cell_info_flex {
+    justify-content: flex-start;
+}
+
+
+.prices_grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+}
+
+.prices_grid_text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 8px;
+}
+
+.prices_grid .prop_number {
+    color: var(--yellow);
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+}
+
+.icons_stroke_blue .grid_cell_icon svg path,
+.icons_stroke_blue .prop_number {
+    stroke: #5AC7FF;
+    color: #5AC7FF;
+}
+
+
+.prices_grid_anima .grid_cell {
+    margin-bottom: 0;
+}
+
+[class~="prices_grid_anima_1"] .grid_cell_icon svg path,
+[class~="prices_grid_anima_1"] .prop_number {
+    stroke: var(--yellow);
+    color: var(--yellow);
+}
+
+.prices_grid_add_info {
+    margin-top: 30px;
+    grid-template-columns: 1fr;
+}
+
+.prices_grid_extra_clown_info {
+    align-self: center;
+}
+
+.prices_grid_add_info .grid_cell_extra_info {
+    display: flex;
+    margin: 25px;
+}
+
+.grid_cell_extra_info_box {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: flex-start;
+}
+
+.prices_grid_extra_clown_info {
+    margin: 0;
+}
+
+.prices_grid_text.cell_text {
+    letter-spacing: 0.01em;
+}
+
+.prices_grid_add_info .prices_grid_text {
+    margin-bottom: 7px;
+}
+
+/*------Mobile------*/
+
+@media (max-width: 1200px) {
+    .show_page_section {
+        width: 100%;
+        align-items: center;
+    }
+
+    .text_grid {
+        grid-template-columns: 1fr;
+    }
+
+    .grid_cell {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .grid_cell_icon {
+        width: 35px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .grid_cell_icon svg {
+        width: 35px;
+        height: 35px;
+    }
+
+    .prices_grid {
+        grid-template-columns: 1fr;
+    }
+
+    .prices_grid .grid_cell {
+        flex-direction: row;
+    }
+
+    .prices_grid_text {
+        padding-bottom: 0;
+    }
+
+    .prices_grid_add_info {
+        margin-top: 0;
+    }
+
+    .prices_grid_add_info .grid_cell_extra_info {
+        width: 95%;
+        max-width: 600px;
+        justify-self: center;
+        /* margin: 10px 25px; */
+    }
+
+    .grid_cell_extra_info ~ .grid_cell_extra_info {
+        max-width: 700px;
+        margin: 0 10px;
+    }
+
+    .grid_cell_extra_info .grid_cell_icon {
+        align-items: flex-start;
+    }
+
+    .shrink_btn {
+        width: 80px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16px;
+        letter-spacing: 0.1em;
+        border-radius: 16px;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        justify-self: center;
+        color: #F0AE28;
+    }
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 13px;
+        font-weight: 600;
+        line-height: 17px;
+        letter-spacing: 0.03em;
+    }
+
+    .grid_cell {
+        margin: 10px 0;
+    }
+
+    .prices_grid {
+        font-size: 15px;
+        font-weight: 400;
+        /* line-height: 20px; */
+        letter-spacing: 0.03em;
+    }
+
+    .prices_grid .prop_number {
+        font-size: 17px;
+        font-weight: 700;
+        line-height: 23px;
+        letter-spacing: 0.03em;
+    }
+
+    .grid_cell_icon {
+        margin-right: 7px;
+    }
+
+    .grid_cell_extra_info .cell_head {
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px;
+        letter-spacing: 0.03em;
+    }
+
+    .grid_cell_extra_info .cell_text {
+        font-size: 11px;
+        font-weight: 400;
+        line-height: 15px;
+        letter-spacing: 0em;
+    }
+    .prices_grid_add_info .grid_cell_extra_info {
+        width: 65%;
+        max-width: 600px;
+    }
+
+    .cell_text [class~="hotdog_arrow"] span {
+        height: 16px;
+    }
+}

@@ -1,0 +1,98 @@
+.gallery_container {
+    /* flex: 1; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    font-family: var(--font-usual-nunito);
+}
+
+.gallery_title {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 43px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: var(--yellow);
+}
+
+.gallery_carousel {
+    height: fit-content;
+    width: 100%;
+    position: relative;
+}
+
+@media (max-width: 1200px) {
+    .gallery_title {
+        color: var(--text-section-titles);
+        font-size: 28px;
+        font-weight: 800;
+
+        line-height: 23px;
+        letter-spacing: 0.03em;
+    }
+
+    .gallery_container a {
+        width: 158px;
+        height: 33px;
+
+        font-size: 10px;
+        font-weight: 700;
+        line-height: 13px;
+        letter-spacing: 0.1em;
+    }
+
+    .gallery_carousel [class~="swiper"] {
+        width: 70%;
+    }
+
+    .gallery_carousel [class~="swiper"] [class="swiper-button-prev"] {
+        left: 18%;
+    }
+
+    .gallery_carousel [class~="swiper"] [class="swiper-button-next"] {
+        right: 18%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .gallery_title {
+        font-size: 17px;
+        font-weight: 700;
+    }
+
+    .gallery_carousel [class~="swiper"] {
+        width: 70%;
+    }
+
+    .gallery_carousel [class~="swiper"] [class="swiper-button-prev"] {
+        left: 15%;
+    }
+
+    .gallery_carousel [class~="swiper"] [class="swiper-button-next"] {
+        right: 15%;
+    }
+}
+
+@media (max-width: 500px) {
+    .gallery_carousel [class~="swiper"] [class="swiper-button-prev"] {
+        left: 10%;
+    }
+
+    .gallery_carousel [class~="swiper"] [class="swiper-button-next"] {
+        right: 10%;
+    }
+}
+
+@media (max-width: 375px) {
+    .gallery_carousel [class~="swiper"] [class="swiper-button-prev"] {
+        left: 5%;
+    }
+
+    .gallery_carousel [class~="swiper"] [class="swiper-button-next"] {
+        right: 5%;
+    }
+}

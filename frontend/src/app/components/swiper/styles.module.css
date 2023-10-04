@@ -1,0 +1,110 @@
+
+
+.swiper_container {
+    width: 80%;
+    /* height: auto; */
+}
+
+/* .carousel .swiper .swiper-wrapper .swiper-slide-shadow-left {
+    width: 400px;
+} */
+
+
+/*-------*/
+.swiper_container[class~="reviews_swiper_container"] [class~="swiper-wrapper"] {
+    height: 340px;
+}
+.swiper_container [class^="swiper-button-"]::after {
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--yellow);
+}
+
+/*--page--*/
+
+.swiper_container_page {
+    width: 60%;
+}
+.swiper_container_page [class~="swiper-wrapper"] {
+    position: static;
+    width: 300px;
+}
+
+.swiper_container_page [class~="swiper-wrapper"] [class~="swiper-slide"] {
+    width: 100%;
+}
+
+
+/*-----Mobile-----*/
+
+@media (max-width: 1200px) {
+
+    .swiper_container {
+        width: 450px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: static;
+    }
+
+    .swiper_container[class~="reviews_swiper_container"] [class~="swiper-slide"] {
+        /* width: 250px; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .swiper_container [class~="swiper-pagination"] {
+        bottom: 0;
+    }
+
+    .swiper_container [class~="swiper-button-prev"]::after, 
+    .swiper_container [class~="swiper-button-next"]::after {
+        font-size: 30px;
+    }
+
+/*--page--*/
+
+
+}
+
+
+@media (max-width: 950px) {
+    .swiper_container_page_950 {
+        width: 90%;
+    }
+    .swiper_container_page_950 [class~="swiper-wrapper"] {
+        position: static;
+        width: 500px;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+    .swiper_container {
+        width: 70%
+    }
+        .swiper_container [class~="swiper-button-prev"] {
+        left: 0;
+    }
+    .swiper_container [class~="swiper-button-next"] {
+        right: 0;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .swiper_container {
+        width: 80%;
+    }
+}
+
+@media (max-width: 375px) {
+
+    .swiper_container {
+        width: 90%;
+    }
+}

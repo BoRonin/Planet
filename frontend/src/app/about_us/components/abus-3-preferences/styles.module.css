@@ -1,0 +1,136 @@
+.abus_3_container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section {
+    /* width: 1440px; */
+    height: 900px;
+    width: 1150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* margin-bottom: 10px; */
+}
+
+.abus_title_box {
+    width: 830px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 37px;
+    letter-spacing: 0.03em;
+    margin-right: 90px;
+}
+
+.abus_title_box_span_title {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+.abus_title_box_span_text {
+    font-size: 22px;
+    text-align: center;
+}
+
+.abus_pref_boxes {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pref_box_time_box_cont {
+    margin-bottom: 200px;
+}
+
+
+/*-----Mobile-----*/
+
+@media (max-width: 1400px) {
+    .abus_pref_boxes {
+        width: 90%;
+    }
+}
+
+
+@media (max-width: 1200px) {
+    .section {
+        width: 100%;
+        height: fit-content;
+        margin-bottom: 40px;
+    }
+
+    .abus_title_box {
+        width: 100%;
+        margin: 0 0 30px;
+    }
+
+    .abus_title_box_span_title {
+        width: 80%;
+        text-align: center;
+    }
+
+    .abus_title_box_span_text {
+        width: 80%;
+        line-height: 25px;
+    }
+
+    .swiper {
+        height: 330px;
+    }
+
+    .swiper [class~="swiper-button-prev"]::after, .swiper [class~="swiper-button-next"]::after {
+        font-size: 20px;
+        color: var(--yellow);
+        font-weight: 600;
+    }
+    .swiper [class~="swiper-button-prev"], .swiper [class~="swiper-button-next"] {
+        /* width: 44px;
+        border-radius: 50%; */
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+
+    .swiper [class~="swiper-button-prev"] {
+        right: calc(50% + 140px);
+        left: auto;
+    }
+    .swiper [class~="swiper-button-next"] {
+        left: calc(50% + 140px);
+    }
+
+    /* .swiper [class~="swiper-wrapper"] {} */
+
+    .swiper .swiper_slide {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .abus_pref_boxes {
+        width: 100%;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+    .abus_title_box_span_title {
+        width: 90%;
+        font-size: 15px;
+        letter-spacing: 0.03em;
+    }
+
+    .abus_title_box_span_text {
+        font-size: 14px;
+        padding: 0 20px;
+    }
+
+}
+
+

@@ -1,0 +1,124 @@
+.main {
+    width: 100%;
+    /* height: 100vh; */
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    background: no-repeat url("./img/About_us_bg_without_pics.png");
+    background-size: cover;
+    position: relative;
+}
+
+.header_margin {
+    height: 250px;
+}
+
+.sections_container {
+    height: 100%;
+    width: 1434px;
+    /* 1300px; /* 1441px; */
+    background: no-repeat url('./img/About_us_bg_pics.png');
+    background-size: auto;
+    background-position-x: center;
+    /* aspect-ratio: auto 1 / 1; */
+    /* overflow-clip-margin: content-box; */
+    /* overflow-x: clip; */
+    box-sizing: content-box;
+}
+
+.footer[class~="footer_footer"] {
+    /* height: auto; */
+    height: 546px;
+}
+
+/* .footer[class~="footer_footer"] [class~="footer_box_elem"]{
+    margin-bottom: 50px;
+} */
+
+
+/*-----Tablet-----*/
+
+@media (max-width: 1300px) {
+    .abus_5_section {
+        display: grid;
+    }
+  }
+  
+  
+
+/*-----Mobile-----*/
+
+@media (max-width: 1200px) {
+    .main {
+        background: no-repeat url("../../img/Mobile_version/about_us/mobile_ab_us_page_bg.png");
+        background-size: cover;
+    }
+    .sections_container {
+        width: 100%;
+        background-image: none;
+    }
+    .header_margin {
+        margin-top: 40px;
+        height: 20px;
+        position: relative;
+        overflow: visible;
+    }
+    /* .mobile_header_pic {
+        width: 100%;
+        min-width: 350px;
+        height: auto;
+        max-height: 1200px;
+    } */
+    
+    .mobile_header_pic_svg {
+        width: 1800px;
+        top: 20px;
+        min-width: 430px;
+        max-height: 1300px;
+        object-fit: cover;
+        position: absolute;
+    }
+
+    .mobile_body_1st_pic_div {
+        position: absolute;
+        top: 780px;
+        right: 0;
+        /* z-index: 0; */
+    }
+    .mobile_body_1st_pic {
+        object-fit: cover;
+        z-index: 0;
+    }
+    .abus_5_section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer {      
+        margin-top: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .header_margin {
+        margin-top: 20px;
+    }
+    .mobile_header_pic_svg {
+        width: 1600px;
+        max-height: 1100px;
+        top: 20px;
+    }
+}
+
+@media (max-width: 700px) {
+
+    .mobile_header_pic_svg {
+        width: auto;
+        max-height: initial;
+        height: 1050px;
+        left: 0;
+        object-position: center;
+    }
+}

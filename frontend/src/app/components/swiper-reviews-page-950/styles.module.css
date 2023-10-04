@@ -1,0 +1,19 @@
+
+/* .swiper {
+    width: 400px;
+} */
+
+.swiper_container_mobile_950_swiper {
+    width: 60%;
+}
+
+.swiper [class~="swiper-pagination-bullets"] {
+    /* align-items: center; */
+    bottom: 17px;
+}
+
+@media (max-width: 768px) {
+    .swiper_container_mobile_950_swiper {
+        width: 550px;
+    }
+}
